@@ -1,0 +1,103 @@
+/* Footer.css */
+
+.footer-container {
+  height: auto;
+  background-color: #111;
+  color: #ccc;
+ padding-left: 10px;
+ padding-right: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 4fr 4fr 2fr;  /* Adjust the column width ratio to better balance logo and text */
+  align-items: center;
+  text-align: left;
+  gap: 10px; /* Adding gap between columns for spacing */
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 80px;  /* Adjust logo size for better balance */
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-content h1 {
+  font-size: 1.5rem;
+  color: #00d1b2;
+}
+
+.footer-content p {
+  font-size: 0.9rem;
+  margin: 6px 0;
+  color: #aaa;
+}
+
+/* Footer links right aligned */
+.footer-links {
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-end; /* Align footer links to the right */
+  align-items: center;
+}
+
+.footer-links p {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 6px;
+  display: inline-block;
+  color: #aaa;
+  font-size: 1.4rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00d1b2;
+  transform: scale(1.1);
+}
+
+.footer-content > p:last-child {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-content {
+    grid-template-columns: 1fr;  /* Stacks the elements vertically */
+    text-align: center;
+  }
+
+  .footer-content h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer-logo {
+    width: 50px;  /* Slightly reduce the logo size on smaller screens */
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+
+  /* Adjust footer-links for smaller screens */
+  .footer-links {
+    justify-content: center; /* Center align on mobile */
+  }
+}

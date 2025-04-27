@@ -1,0 +1,107 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #000 !important; /* pure black background */
+  box-shadow: 0 2px 5px rgba(138, 43, 226, 0.3); /* subtle purple glow */
+  padding: 0.5rem 1rem; /* Reduce padding for smaller navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Smaller font size for brand */
+  color: #d8b4f8 !important; /* light purple */
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand img {
+  width: 50px; /* Smaller logo size */
+  height: auto;
+  display: inline-block;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #e0d4f7 !important; /* soft light purple */
+  margin-right: 15px; /* Slightly less margin between links */
+  font-size: 1rem; /* Smaller font size for nav links */
+  position: relative;
+}
+
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+  color: #9b59b6 !important; /* dark purple on hover */
+  transition: 0.3s;
+}
+
+/* Underline effect on hover */
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #9b59b6; /* dark purple underline */
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Search form */
+.form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #9b59b6;
+  color: #e0d4f7;
+  font-size: 0.9rem; /* Smaller search bar font */
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn-outline-success {
+  color: #d8b4f8;
+  border-color: #9b59b6;
+  font-size: 0.9rem; /* Smaller button font */
+}
+
+.btn-outline-success:hover {
+  background-color: #9b59b6;
+  color: #000;
+}
+
+/* Adjust Navbar collapse spacing */
+.navbar-collapse {
+  margin-top: 0; /* Remove extra margin */
+}
+
+/* Hamburger menu adjustments */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='violet' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+  .navbar-brand img {
+    width: 80px; /* Even smaller logo on mobile */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem; /* Even smaller font for mobile */
+    margin-right: 10px; /* Less space between links */
+  }
+
+  .form-control {
+    width: 75%; /* Make the search bar fit better on small screens */
+  }
+
+  .btn-outline-success {
+    width: 100%; /* Make the button stretch to full width on mobile */
+    font-size: 0.9rem;
+  }
+}

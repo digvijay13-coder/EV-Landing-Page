@@ -1,0 +1,122 @@
+/* General styles for the Models page */
+.models-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background */
+  }
+  
+  .models-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .card {
+    width: 18rem;
+    margin: 15px;
+    background-color: #222; /* Dark background for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    color: #fff;
+    background-color: #333; /* Dark background for card body */
+    padding: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .card-body .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-body .card-text {
+    font-size: 1rem;
+    color: #bbb; /* Light text for price */
+  }
+  
+  .card-body a {
+    text-decoration: none;
+  }
+  
+  .card-body a button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Styling for the Collapse section */
+  .collapse-section {
+    margin-top: 30px;
+  }
+  
+  .collapse-section button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .collapse-section .collapse-content {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  .collapse-section a {
+    color: #f0f8ff; /* Lighter color for link text */
+    text-decoration: none;
+  }
+  
+  .collapse-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pagination styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .pagination .page-item {
+    margin: 0 5px;
+  }
+  
+  .pagination .page-link {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #0056b3;
+  }
+  
